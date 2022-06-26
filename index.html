@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Coming Soon</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Happy Birthday Xola" />
+    <meta name="robots" content="index, follow" />
+    <link rel="author" href="https://plus.google.com/u/1/+AyushSharma1/" />
+    <meta name="keywords" content="Birthday, Happy" />
+    <meta property="og:type" content="E-Greeting" />
+    <meta property="og:image" content="favicon.ico" />
+    <meta property="og:description" content="Wish you a very Happy Birthday" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"
+    />
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        color: white;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 25px;
+      }
+      section {
+          position: fixed;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background: linear-gradient(#000046, #1cb5e0);
+      }
+
+      .con-marq {
+        margin-bottom: 100px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 9;
+      }
+
+      .con-marq:nth-child(1) {
+        top: 100px;
+      }
+
+      .con-marq:nth-child(2) {
+        top: 450px;
+      }
+
+
+      /* .bgimg {
+        background: linear-gradient(#000046, #1cb5e0);
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        color: white;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 25px;
+      } */
+
+      .topleft {
+        position: absolute;
+        top: 0;
+        left: 16px;
+      }
+
+      .bottomleft {
+        position: absolute;
+        bottom: 0;
+        left: 16px;
+      }
+
+      .middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      hr {
+        margin: auto;
+        width: 40%;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="particles-js">
+    <div class="con-marq">
+      <marquee id="imglewat" direction="left">
+        <img
+          src="https://jujur.feeldream.repl.co/1.gif"
+          width="100px"
+          height="100px"
+        />
+      </marquee>
+    </div>
+    <div class="con-marq">
+      <marquee id="imglewat" direction="right">
+        <img
+          src="https://i.postimg.cc/7ZLD8Vtc/27d6eadc23be2c44b69d14766725b0eb.gif"
+          width="100px"
+          height="100px"
+        />
+      </marquee>
+    </div>
+    <!-- <audio id="ohayo" src="Ohayou.mp3" type="audio/mpeg" controls style="display: none;"></audio> -->
+    <div class="bgimg">
+      <!-- <div class="topleft">
+        <p>Bendi Tandayu Saputra</p>
+      </div> -->
+      <div class="middle">
+        <h1>COMING SOON</h1>
+        <hr />
+        <p id="demo"></p>
+      </div>
+      <!-- <div class="bottomleft">
+        <p>Different is Better</p>
+      </div> -->
+    </div>
+    </section>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script src="particles.js-master/particles.js-master/particles.js"></script>
+  <script src="particles.js-master/particles.js-master/demo/js/app.js"></script>
+  <script src="particles.js-master/particles.js-master/demo/js/lib/stats.js"></script>
+  <script>
+    $(window).load(function (e) {
+      var siki = new Date().getTime();
+      var tanggalUltah = new Date("Jul 13, 2022 00:00:00").getTime();
+      var kacek = tanggalUltah - siki;
+
+      if ( kacek < 0 ) {
+        document.location.href = "hbd.html";
+      }
+    })
+
+    var countDownDate = new Date("Jul 13, 2022 00:00:00").getTime();
+
+    var x = setInterval(function () {
+      var now = new Date().getTime();
+
+      var distance = countDownDate - now;
+
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("demo").innerHTML =
+        days + "H " + hours + "J " + minutes + "M " + seconds + "D";
+
+      if (distance <= 0) {
+        clearInterval(x);
+        document.location.href = "hbd.html";
+      }
+    }, 1000);
+  </script>
+</html>
