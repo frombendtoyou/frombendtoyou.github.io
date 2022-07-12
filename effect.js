@@ -142,7 +142,7 @@ $('document').ready(function(){
 	$('#light_candle').click(function(){
 		$('.fuego').fadeIn('slow');
 		$(this).fadeOut('slow').promise().done(function(){
-			$('#wish_message').fadeIn('slow');
+			$('#tiup_lilin').fadeIn('slow');
 		});
 	});
 	
@@ -150,6 +150,7 @@ $('document').ready(function(){
 		$(this).fadeOut('slow').delay(3000).promise().done(function(){
 			$('#wish_message').fadeIn('slow');
 		});
+		$('#tiup_lilin').fadeOut('slow');
 	});
 
 		
@@ -179,15 +180,16 @@ $('document').ready(function(){
 	});
 
 	$('#doa').click(function () {
-		var audio = $('.song')[0];
-        audio.pause()
-		var audio = $('.doaa')[0];
-        audio.play();
-		$(this).fadeOut('slow').delay(80000).promise().done(function(){
-			var audio = $('.song')[0];
-        	audio.play();
-			$('#story').fadeIn('slow');
-		});
+		document.location.href = "pesan.html";
+		// var audio = $('.song')[0];
+        // audio.pause()
+		// var audio = $('.doaa')[0];
+        // audio.play();
+		// $(this).fadeOut('slow').delay(80000).promise().done(function(){
+		// 	var audio = $('.song')[0];
+        // 	audio.play();
+		// 	$('#story').fadeIn('slow');
+		// });
 	})
 	
 	$('#story').click(function(){

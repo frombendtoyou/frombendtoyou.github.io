@@ -1,105 +1,107 @@
 body {
-    margin: 0;
-    padding: 0;
-    background: rgba(0, 0, 150, .8);
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#000046, #1cb5e0);
 }
 
 h1 {
-    text-align: center;
-    color: #ffffff;
-    font-size: 72px;
-    font-family: cursive;
-    text-shadow: 3px 3px 1px whitesmoke;
+  text-align: center;
+  color: #ffffff;
+  font-size: 72px;
+  font-family: cursive;
+  text-shadow: 3px 3px 1px whitesmoke;
 }
 
 .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: none;
 }
 
 .container .type {
-    font-family: kristen ITC;
-    font-size: 48px;
-    color: white;
+  font-family: kristen ITC;
+  font-size: 28px;
+  color: white;
+}
+
+.content-pesan {
+  width: 100% !important;
+  color: white;
+  position: fixed;
+  bottom: 20px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 60px;
+    font-family: cursive;
+    text-shadow: 3px 3px 1px whitesmoke;
+  }
 
-    h1 {
-        text-align: center;
-        color: #ffffff;
-        font-size: 60px;
-        font-family: cursive;
-        text-shadow: 3px 3px 1px whitesmoke;
-    }
-    
-    .container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        text-align: center;
-    }
-    
-    .container .type {
-        font-family: kristen ITC;
-        font-size: 42px;
-        color: white;
-    }
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
+  .container .type {
+    font-family: kristen ITC;
+    font-size: 42px;
+    color: white;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
+  h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 48px;
+    font-family: cursive;
+    text-shadow: 3px 3px 1px whitesmoke;
+  }
 
-    h1 {
-        text-align: center;
-        color: #ffffff;
-        font-size: 48px;
-        font-family: cursive;
-        text-shadow: 3px 3px 1px whitesmoke;
-    }
-    
-    .container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        text-align: center;
-    }
-    
-    .container .type {
-        font-family: kristen ITC;
-        font-size: 36px;
-        color: white;
-    }
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
+  .container .type {
+    font-family: kristen ITC;
+    font-size: 36px;
+    color: white;
+  }
 }
 
 @media (max-width: 480px) {
+  h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 36px;
+    font-family: cursive;
+    text-shadow: 3px 3px 1px whitesmoke;
+  }
 
-    h1 {
-        text-align: center;
-        color: #ffffff;
-        font-size: 36px;
-        font-family: cursive;
-        text-shadow: 3px 3px 1px whitesmoke;
-    }
-    
-    .container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        text-align: center;
-    }
-    
-    .container .type {
-        font-family: kristen ITC;
-        font-size: 30px;
-        color: white;
-    }
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
+  .container .type {
+    font-family: kristen ITC;
+    font-size: 30px;
+    color: white;
+  }
 }
