@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000000;
+}
+
+.shadow {
+    position: relative;
+    margin: 200px auto 0;
+    width: 500px;
+    height: 200px;
+    background: linear-gradient(0deg, #000000, #262626);
+    text-align: center;
+    padding-top: 80px;
+    border-radius: 20px;
+}
+
+.bintang-1 {
+    font-size: 48px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+.bintang-2 {
+    font-size: 48px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.bintang-3 {
+    font-size: 48px;
+    position: absolute;
+    bottom: -15px;
+    left: 10px;
+}
+
+.bintang-4 {
+    font-size: 48px;
+    position: absolute;
+    bottom: -15px;
+    right: 10px;
+}
+
+.shadow h1 {
+    font-family: kristen ITC;
+    color: white;
+}
+
+.shadow span {
+    color: white;
+    font-family: cursive;
+}
+
+.shadow span .fa-heart {
+    color: red;
+}
+
+.shadow .bend::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid white;
+    margin: auto;
+    width: 10%;
+    padding: 2px;
+}
+
+.shadow::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#ffff00,#fb0094,#0000ff,#00ff00, #ffff00,#ff0000);
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    border-radius: 20px;
+    background-size: 400%;
+    z-index: -1;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}

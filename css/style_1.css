@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.satu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #ff0000;
+    z-index: -9;
+    opacity: 0;
+    animation: slideTop 3s ease forwards;
+}
+
+.dua {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: yellow;
+    z-index: -8;
+    opacity: 0;
+    animation: slideLeft 3s ease 3s forwards;
+}
+
+.tiga {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #00ff00;
+    z-index: -7;
+    opacity: 0;
+    animation: slideBottom 3s ease 6s forwards;
+}
+
+.empat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: dodgerblue;
+    z-index: -6;
+    opacity: 0;
+    animation: slideRight 3s ease 9s forwards;
+}
+
+.lima {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -5;
+    opacity: 0;
+    animation: slideBottom 3s ease 12s forwards;
+}
+
+.enam {
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -4;
+    opacity: 0;
+    animation: slideTop 3s ease 15s forwards;
+}
+
+.container {
+    position: relative;
+    opacity: 0;
+    animation: slideTop 3s ease 18s forwards;
+}
+
+.shadow-1 {
+    position: relative;
+    margin: 200px auto 0;
+    width: 500px;
+    height: 200px;
+    background: linear-gradient(0deg, #000000, #262626);
+    text-align: center;
+    padding-top: 80px;
+}
+
+.shadow-1::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#ffff00,#fb0094,#0000ff,#00ff00, #ffff00,#ff0000);
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    background-size: 400%;
+    z-index: -1;
+    animation: animate 20s linear infinite;
+}
+
+h1 {
+    font-family: kristen ITC;
+    color: white;
+}
+
+span {
+    color: white;
+    font-family: cursive;
+}
+
+
+@keyframes slideTop {
+    from {
+        opacity: 1;
+        transform: translateY(-1000px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        opacity: 1;
+        transform: translatex(-1400px);
+    }
+    to {
+        opacity: 1;
+        transform: translatex(0);
+
+    }
+}
+
+@keyframes slideBottom {
+    from {
+        opacity: 1;
+        transform: translateY(1000px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+@keyframes slideRight {
+    from {
+        opacity: 1;
+        transform: translatex(1400px);
+    }
+    to {
+        opacity: 1;
+        transform: translatex(0);
+
+    }
+}
+
+@keyframes animate {
+
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}

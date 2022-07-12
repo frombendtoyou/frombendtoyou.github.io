@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #262626;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 72px;
+    font-family: cursive;
+    text-shadow: 3px 3px 1px whitesmoke;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    h1 {
+        text-align: center;
+        color: #ffffff;
+        font-size: 62px;
+        font-family: cursive;
+        text-shadow: 3px 3px 1px whitesmoke;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    h1 {
+        text-align: center;
+        color: #ffffff;
+        font-size: 52px;
+        font-family: cursive;
+        text-shadow: 3px 3px 1px whitesmoke;
+    }
+}
+
+.cup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 250px;
+    border: 6px solid white;
+    border-top: 2px solid transparent;
+    border-radius: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: url(../img/83944.jpg);
+    background-repeat: repeat-x;
+    animation: animate 20s linear infinite;
+    box-shadow: 0 0 0 6px white 0 20px 35px rgba(0, 0, 0, 1);
+}
+
+.cup::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 6px solid white;
+    top: 50px;
+    right: -75px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+@keyframes animate {
+    
+    0% {
+        background-position: 0 240px;
+    }
+
+    10% {
+        background-position: 0 240px;
+    }
+
+    20% {
+        background-position: 1000px 140px;
+    }
+
+    50% {
+        background-position: 2000px -70px;
+    }
+
+    80% {
+        background-position: 2500px 125px;
+    }
+
+    100% {
+        background-position: 0 240px;
+    }
+}

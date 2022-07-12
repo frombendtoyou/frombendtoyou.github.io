@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../img/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    height: 100vh;
+    background: url(../img/rain.png);
+    animation: rain .3s linear infinite;
+}
+
+.container::before {
+    content: '';
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: lighting 4s linear infinite;
+    opacity: 0;
+}
+
+.container h1 {
+    color: #ffffff;
+    font-size: 48px;
+    font-family: cursive;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: .5;
+}
+
+@keyframes rain {
+
+    from {
+        background-position: 0% 0%;
+    }
+
+    to {
+        background-position: 10% 100%;
+    }
+
+}
+
+@keyframes lighting {
+
+   0% {
+       opacity: 0;
+   } 
+
+   10% {
+       opacity: 0;
+   }
+
+   11% {
+       opacity: 1;
+   }
+
+   14% {
+       opacity: 0;
+   }
+
+   20% {
+       opacity: 0;
+   }
+
+   21% {
+       opacity: 1;
+   }
+
+   24% {
+       opacity: 0;
+   }
+
+   104% {
+       opacity: 0;
+   }
+
+}

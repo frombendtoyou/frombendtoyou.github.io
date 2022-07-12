@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #111111;
+}
+
+.kotak {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: perspective(500px) rotatex(60deg);
+}
+
+.square {
+    position: absolute;
+    width: 1800px;
+    height: 1800px;
+    background: transparent;
+    border: 100px solid #000000;
+    transform-style: preserve-3d;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 5px #fff, inset 0 0 0 5px #fff;
+    animation: putar 80s linear infinite;
+}
+
+.square::before {
+    content: '';
+    position: absolute;
+    top: -53px;
+    left: -53px;
+    bottom: -53px;
+    right: -53px;
+    border: 6px dashed #fff;
+}
+
+.square span {
+    position: absolute;
+    display: block;
+    transform: scale(0);
+    width: calc(100% + 150px);
+    height: 8px;
+}
+
+.square span:nth-child(1) {
+    top: -80px;
+    left: -75px;
+    width: 8px;
+    height: calc(100% + 150px);
+    background: linear-gradient(180deg, #ff0, #f00);
+    animation: jalan 80s linear infinite;
+    animation-delay: 60s;
+    transform-origin: bottom;
+}
+
+.square span:nth-child(3) {
+    top: -80px;
+    left: initial;
+    right: -75px;
+    width: 8px;
+    height: calc(100% + 150px);
+    background: linear-gradient(0deg, #ff0, #f00);
+    animation: jalan 80s linear infinite;
+    animation-delay: 20s;
+    transform-origin: top;
+}
+
+.square span:nth-child(2) {
+    top: -80px;
+    left: -75px;
+    background: linear-gradient(90deg, #ff0, #f00);
+    animation: mlaku 80s linear infinite;
+    transform-origin: left;
+}
+
+.square span:nth-child(4) {
+    top: initial;
+    left: -75px;
+    bottom: -78px;
+    background: linear-gradient(270deg, #ff0, #f00);
+    animation: mlaku 80s linear infinite;
+    animation-delay: 40s;
+    transform-origin: right;
+}
+
+@keyframes putar {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes jalan {
+    0%,75%,100% {
+        transform: scaleY(0)
+    }
+
+    25%,50% {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes mlaku {
+    0%,75%,100% {
+        transform: scalex(0)
+    }
+
+    25%,50% {
+        transform: scalex(1);
+    }
+}

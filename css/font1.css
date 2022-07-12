@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'bend';
+    src: url(../font/typogarden-demo.ttf);
+}
+
+    h1 span {
+        font-family: 'bend';
+    }
+
+    div span {
+        font-family: 'bend';
+    }

@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'day';
+    src: url(../font/Bubblegum.ttf);
+}
+
+    h1 span {
+        font-family: 'day';
+    }

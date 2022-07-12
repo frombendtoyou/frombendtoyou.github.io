@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000000;
+}
+
+div {
+    text-align: center;
+}
+
+.kotak-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.kotak-1 span {
+    color: #ffffff;
+    font-size: 20em;
+    display: table-cell;
+    opacity: 0;
+    animation: glow 15s linear forwards;
+}
+
+.kotak-1 span:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.kotak-1 span:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.kotak-1 span:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.kotak-1 span:nth-child(4) {
+    animation-delay: 3s;
+}
+
+.kotak-1 span:nth-child(5) {
+    animation-delay: 5s;
+}
+
+.kotak-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.kotak-2 span {
+    color: #ffffff;
+    font-size: 20em;
+    display: table-cell;
+    opacity: 0;
+    animation: glow 15s linear forwards;
+}
+
+.kotak-2 span:nth-child(1) {
+    animation-delay: 22s;
+}
+
+.kotak-2 span:nth-child(2) {
+    animation-delay: 20s;
+}
+
+.kotak-2 span:nth-child(3) {
+    animation-delay: 21s;
+}
+
+.kotak-2 span:nth-child(4) {
+    animation-delay: 23s;
+}
+
+.kotak-3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.kotak-3 span {
+    color: #ffffff;
+    font-size: 20em;
+    display: table-cell;
+    opacity: 0;
+    animation: glowing 15s linear forwards;
+}
+
+.kotak-3 span:nth-child(1) {
+    animation-delay: 38s;
+}
+
+.kotak-3 span:nth-child(2) {
+    animation-delay: 40s;
+}
+
+.kotak-3 span:nth-child(3) {
+    animation-delay: 39s;
+}
+
+.kotak-3 span:nth-child(4) {
+    animation-delay: 41s;
+}
+
+@keyframes glow {
+
+    0% {
+        opacity: 1;
+        text-shadow: none;
+    }
+
+    50% {
+        opacity: 1;
+        filter: blur(2px);
+        color: #ffffff;
+        text-shadow: 0 0 10px #00b3ff,
+                     0 0 20px #00b3ff,
+                     0 0 40px #00b3ff,
+                     0 0 80px #00b3ff,
+                     0 0 120px #00b3ff,
+                     0 0 240px #00b3ff;
+    }
+
+    100% {
+        visibility: hidden;
+    }                 
+
+}
+
+@keyframes glowing {
+
+    0% {
+        opacity: 1;
+        color: #ffffff;
+        filter: blur(0px);
+        text-shadow: none;
+    }
+
+    100% {
+        opacity: 1;
+        color: #ffffff;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #00b3ff,
+                     0 0 20px #00b3ff,
+                     0 0 40px #00b3ff,
+                     0 0 80px #00b3ff,
+                     0 0 120px #00b3ff,
+                     0 0 240px #00b3ff;
+    }             
+      
+}
